@@ -96,23 +96,25 @@
   padding: 40px;
   margin: 40px;
 }
+
 /* Style for image section */
-.image-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px;
-  }
+      .image-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px;
+      }
 
-  /* Style for individual images */
-  .image {
-    margin: 20px;
-    max-width: 400px;
-    height: auto;
-  }
-
-
+      /* Style for individual images */
+      .image {
+        margin: 20px;
+        max-width: 400px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
 
 
 
