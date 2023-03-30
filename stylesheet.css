@@ -357,41 +357,28 @@ td {
       contact page css start
 =============================*/
 
-.contact {
-  background-color: #f9f9f9;
-  padding: 50px;
+#contact {
   text-align: center;
+  padding: 50px 0;
+  background-color: #f5f5f5;
 }
 
-.contact h2 {
-  font-size: 2rem;
+#contact h2 {
+  font-size: 2em;
   margin-bottom: 30px;
 }
 
-.contact ul {
-  list-style: none;
-  padding: 0;
+#contact ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
-.contact li {
-  font-size: 1.2rem;
+#contact li {
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+  font-size: 1.2em;
 }
 
-.contact i {
-  font-size: 1.5rem;
+#contact li i {
   margin-right: 10px;
 }
-
-.contact a {
-  color: #333;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  color: #c74343;
-}
-
