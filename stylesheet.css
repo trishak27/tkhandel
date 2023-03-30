@@ -1,95 +1,153 @@
 /* Global styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-    line-height: 1.5;
-    
-    background-size: cover; /* adjust the image size to cover the entire viewport */
-    background-position: center; /* center the image within the viewport */
-    height: 100vh;
-    margin: 0;
-    display: block;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: hsl(0, 0%, 0%);
-    padding: 20px;
-  }
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
-  nav li {
-    margin-left: 20px;
-    margin-bottom: 2ZZ0px;
-  }
-  nav a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  nav a:hover {
-    color: #ddd; 
-    border-bottom: 2px solid #2c2c2c;
-  }
-  footer {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    text-align: center;
-    align-items: center;
-    
-  }
-  .logo a{
-    text-decoration: none;
-    color: #000000;
-  }
-
-  .logo a:visited {
-    text-decoration: none;
-    color: #000000;
-  }
-    /* =========================
-        homepage css start
-=============================*/ 
-.heroimage{
-   background-image: url("img1.jpg");
-    height: 700px; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.herotext{
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  background-size: cover; /* adjust the image size to cover the entire viewport */
+  background-position: center; /* center the image within the viewport */
+  height: 100vh;
+  margin: 0;
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0, 0%, 0%);
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #000000;
+  -decoration: none;text
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #ddd; 
+  border-bottom: 2px solid #2c2c2c;
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px 0;
   text-align: center;
+}
+ footer a{
+  color: #ffa718;
+  text-decoration: none
+ }
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+
+.logo a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.logo a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* =========================
+    homepage css start
+=============================*/ 
+.hero-section {
+  position: relative;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.text-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0);
-  padding: 20px;
+  text-align: center;
+  color: white;
 }
+
+.text-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffa718;
+  color: #ffffff;
+}
+
+
+
+
+
 
 .work{
   text-align: center;
@@ -97,24 +155,49 @@
   margin: 40px;
 }
 
-/* Style for image section */
-      .image-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 50px;
-      }
 
-      /* Style for individual images */
-      .image {
-        margin: 20px;
-        max-width: 400px;
-        height: auto;
-      }
-    </style>
-  </head>
-  <body>
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.image-container {
+  margin: 20px;
+  max-width: 400px;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  text-align: center;
+  padding: 20px;
+}
+
+.caption h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.caption p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.caption button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffa718;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 
 
@@ -130,30 +213,185 @@
 
 
 
-    /* =========================
-        gallery css start
+
+
+
+
+
+  /* =========================
+      gallery css start
 =============================*/
-  
+
 .gallery{
-  line-height:0;
-  -webkit-column-count:5; /* split it into 5 columns */
-  -webkit-column-gap:5px; /* give it a 5px gap between columns */
-  -moz-column-count:5;
-  -moz-column-gap:5px;
-  column-count:5;
-  column-gap:5px;
-  margin: 200px;
-  
+line-height:0;
+-webkit-column-count:5; /* split it into 5 columns */
+-webkit-column-gap:5px; /* give it a 5px gap between columns */
+-moz-column-count:5;
+-moz-column-gap:5px;
+column-count:5;
+column-gap:5px;
+margin: 200px;
+
 }
 
 
 .gallery img {
-  width: 100%;
-   height: auto;
-   margin-bottom:5px; /* to match column gap */
+width: 100%;
+ height: auto;
+ margin-bottom:5px; /* to match column gap */
 }
 
 
+
+  /* =========================
+      about css start
+=============================*/
+/* Style for the main section */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+/* Style for the profile container */
+.profile-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Style for the profile picture */
+.profile-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Style for the bio container */
+.bio-container {
+  max-width: 700px;
+  text-align: justify;
+}
+
+/* Style for the headings */
+.bio-container h3 {
+  font-size: 24px;
+  margin: 30px 0 10px;
+  text-align: center;
+}
+
+/* Style for the paragraphs */
+.bio-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #080000;
+  margin-bottom: 20px;
+}
+
+/* Style for the main content section */
+.about-section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the awards section */
+.awards-section {
+  padding: 20px;
+}
+
+/* Style for the awards section heading */
+.awards-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the ordered list */
+.awards-section ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+/* Style for the list items */
+.awards-section li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+
+  /* =========================
+      about table css start
+=============================*/
+table {
+  max-width: 960px;
+  margin: 10px auto;
+}
+thead th {
   
+  background: #ffa718;
+  color: #FFF;
+  padding: 20px;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+  padding: 20px;
+}
+td {
   
+  padding: 20px;
   
+}
+
+  /* =========================
+      contact page css start
+=============================*/
+
+.contact {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #c74343;
+}
+
